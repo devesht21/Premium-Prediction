@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Insurance Premium Prediction</title>
+  </head>
+  <body>
+    <h1>Predict Health Insurance Premium From Information</h1>
+
+    <form action='/predict' method='post'>
+      <strong><label for="full_name">Name</label></strong><br />
+      <input type="text" id="full_name" name="full_name" placeholder="Enter Name" /><br /><br />
+      <strong><label for="age">Age</label></strong><br />
+      <input type="text" id="age" name="age" placeholder="Enter Age" /><br /><br />
+      <strong><label for="bmi">BMI</label></strong><br />
+      <input type="text" id="bmi" name="bmi" placeholder="Enter Body Mass Index" /><br /><br />
+      <strong><label>Are you a Smoker?</label></strong><br />
+      <div class="radio_smoker">
+        <input type="radio" id="Y" name="smoker" value="yes" />
+        <label for="Y">Yes</label><br />
+        <input type="radio" id="N" name="smoker" value="no" />
+        <label for="N">No</label>
+      </div>
+      <br />
+      <button type="submit">Predict Premium</button>
+    </form>
+  </body>
+</html>
